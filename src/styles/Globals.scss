@@ -39,6 +39,24 @@ header {
   font-size: 28px;
   letter-spacing: 4.725px;
 }
+.subtitle {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  span {
+    opacity: 0.25;
+    font-family: $font-barlow-condensed;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2.7px;
+  }
+  h5 {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    font-family: $font-barlow-condensed;
+  }
+}
 .subtitle-1 {
   font-size: 28px;
   text-transform: uppercase;

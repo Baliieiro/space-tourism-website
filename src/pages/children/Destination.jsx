@@ -5,12 +5,11 @@ import { useLocation } from "react-router-dom";
 
 export default function Destination() {
   const { pathname } = useLocation();
-  console.log(destinations);
   return (
     <div className="destination">
       <div className="subtitle">
-        <span>01</span>
-        <h5 className="heading-5">Pick your destination</h5>
+        <span className="number">01</span>
+        <h5>Pick your destination</h5>
       </div>
       <section>
         <img src={destinations[0].images.png} alt="" />
