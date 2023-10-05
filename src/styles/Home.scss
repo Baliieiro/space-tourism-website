@@ -1,0 +1,113 @@
+@import "./variab";
+
+@media (min-width: 375px) {
+  body {
+    .logo {
+      background-image: url(../assets/shared/logo.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+    }
+    .navbar-close {
+      height: 21px;
+      .menu {
+        background-image: url(../assets/shared/icon-hamburger.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 21px;
+        display: inline-block;
+      }
+      ul {
+        display: none;
+      }
+    }
+    .navbar-open {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40px);
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 254px;
+      height: 100%;
+      z-index: 2;
+      .menu {
+        background-image: url(../assets/shared/icon-close.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin: 2.12rem 1.65rem 4rem auto;
+      }
+      ul {
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        list-style: none;
+      }
+      li {
+        span {
+          font-family: $font-barlow;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.16875rem;
+        }
+        gap: 0.6875rem;
+        display: inline-flex;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: $font-barlow;
+        letter-spacing: 0.16875rem;
+      }
+    }
+  }
+  .home {
+    text-align: center;
+    .info {
+      display: flex;
+      width: 20.4375rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 5rem;
+      .heading-5 {
+        font-family: $font-barlow-condensed;
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 2.7px;
+      }
+      .heading-1 {
+        text-align: center;
+        font-size: 5rem;
+        line-height: 6.25rem;
+        width: 100%;
+      }
+      p {
+        color: $color-secondary;
+        text-align: center;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+      }
+    }
+    .btn-main {
+      width: 9.375rem;
+      height: 9.375rem;
+      border-radius: 9.375rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.07813rem;
+    }
+    .btn-main::before {
+      top: -3rem;
+      left: -3rem;
+      border: 3rem solid #24262f;
+    }
+  }
+}
