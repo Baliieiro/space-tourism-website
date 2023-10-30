@@ -20,6 +20,11 @@
         height: 222px;
       }
     }
+    svg {
+      circle.active {
+        opacity: 1;
+      }
+    }
     .comander {
       display: inline-block;
       h4 {

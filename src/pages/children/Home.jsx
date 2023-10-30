@@ -15,7 +15,7 @@ export default function Home() {
           this world experience!
         </p>
       </div>
-      <Link to="/destination" className="btn">
+      <Link to="destination" className="btn">
         <button className="btn-main">EXPLORE</button>
       </Link>
     </section>
